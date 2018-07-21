@@ -1,0 +1,244 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*background: yellow;*/
+}
+
+#page #header{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background: red;
+}
+
+#header img{
+    margin: 10px 10px;
+    width: 10%;
+}
+
+#page #musbox{
+    position: relative;
+    width: 100%;
+    /*height: 700px;*/
+    background: whitesmoke;
+    margin-top: 6px;
+    display: -webkit-flex;
+}
+
+#musbox #box1_a{
+position: absolute;
+    width: 100%;
+    height: 55px;
+    /*background: blueviolet;*/
+    border-bottom: 1px solid lightgray;
+}
+#musbox #box2_a{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 55px;
+    /*background: blueviolet;*/
+    border-bottom: 1px solid lightgray;
+}
+#musbox #box3_a{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 110px;
+    /*background: blueviolet;*/
+    border-bottom: 1px solid lightgray;
+}
+#musbox #box4_b{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 165px;
+    /*background: blueviolet;*/
+    border-bottom: 1px solid lightgray;
+}
+#musbox #box5_a{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    top: 220px;
+    /*backgrsound: blueviolet;*/
+    border-bottom: 1px solid lightgray;
+}
+
+#musbox #box1_a #box1_a1 img{
+    position: absolute;
+    width: 6%;
+    top: 20px;
+    margin-left: 3%;
+    /*z-index: 10;*/
+}
+#musbox p{
+    font-size: 17px;
+    top: -23px;
+}
+
+#musbox #box2_a #box2_a1 img{
+    position: absolute;
+    width: 8%;
+    top: 10px;
+    margin-left: 2%;
+}
+
+#musbox #box3_a #box3_a1 img{
+    position: absolute;
+    width: 6%;
+    top: 10px;
+    margin-left: 2%;
+}
+
+#musbox #box4_b #box4_b1 img{
+     position: absolute;
+     width: 7%;
+     top: 10px;
+     margin-left: 2%;
+ }
+
+#musbox #box5_a #box5_a1 img{
+    position: absolute;
+    width: 6%;
+    top: 15px;
+    margin-left: 2%;
+}
+
+
+#page p{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 12%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#like1 li{
+    height: 65px;
+    position: relative;
+}
+#like2 li{
+    height: 65px;
+    position: relative;
+}
+
+#page #mine1{
+      position: absolute;
+      width: 100%;
+      top: 283px;
+      /*height: 1000px;*/
+      border-bottom: 1px solid lightgray;
+      /*overflow: scroll;*/
+  }
+
+#mine1 #mine1_1{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: lightgray;
+}
+#mine2 #mine2_1{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: lightgray;
+}
+
+#page #mine2{
+    position: absolute;
+    width: 100%;
+    top: 625px;
+    /*height: 200px;*/
+    border-bottom: 2px solid gray;
+    /*overflow: scroll;*/
+}
+
+#mine1 #der1,
+#mine2 #der2{
+    position: absolute;
+    width: 15px;
+    top: 8px;
+    left: 10px;
+}
+
+#mine1 #pag1,
+#mine2 #pag2{
+    position: absolute;
+    top: -36px;
+    left: -10px;
+    font-size: 15px;
+}
+
+/*#mine1,#mine2{*/
+    /*position: relative;*/
+    /*overflow: scroll;*/
+    /*width: 100%;*/
+    /*height: 90px;*/
+/*}*/
+
+#mine1 #she1,
+#mine2 #she2{
+    position: absolute;
+    width: 19px;
+    top: 13%;
+    right: 3%;
+}
+#mine1 p,
+#mine2 p{
+    position: absolute;
+    font-size: 44px;
+    bottom: 110px;
+}
+
+#footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 10%;
+    background: cadetblue;
+}
+
+
+#like1 li img{
+    position: absolute;
+    width: 50px;
+    left: 10px;
+    top: 10px;
+}
+
+#like1 li p:nth-child(2){
+    position: absolute;
+    left: 35px;
+    top: -30px;
+    font-size: 17px;
+}
+#like1 li p:nth-child(3){
+    position: absolute;
+    left: 45px;
+    top: -5px;
+    font-size: 12px;
+    color: lightseagreen;
+}
+
+#like2 img{
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    top: 10px;
+}
+#like2 p{
+    font-size: 17px;
+    left: 25px;
+    top: -15px;
+}

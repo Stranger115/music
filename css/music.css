@@ -1,0 +1,603 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.music_box_list {
+	width: 100%;
+	height: 100%;
+	/*background: skyblue;*/
+}
+/*顶栏样式*/
+.music_box_list .topLine{
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	background: rgb(223,66,56);
+	z-index: 4;
+	line-height: 40px;
+	
+}
+.music_box_list .topLine .id_back{
+	position: absolute;
+	width: 8%;
+	left: 5%;
+	top: 15%;
+	
+}
+.music_box_list .topLine .my{
+	position: absolute;
+	width: 30%;
+	left: 16%;
+	line-height: 40px;
+	color: white;
+	font-size: 18px;
+}
+.music_box_list .topLine .search{
+	position: absolute;
+	width: 8%;
+	right: 15%;
+	top: 15%;
+}
+.music_box_list .topLine .tool{
+	position: absolute;
+	width: 8%;
+	right: 5%;
+	top: 15%;
+}
+/*导航栏样式*/
+.music_box_list .id_nav{
+	position: fixed;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background: rgb(232,72,61);
+	z-index: 4;
+}
+.music_box_list .id_nav .Plist,.Slist,.Zlist,.Wlist{
+	
+	
+	width: 25%;
+	text-decoration: none;
+	height: 100%;
+	font-size: 15px;
+	text-align: center;
+	line-height: 35px;
+	float: left;
+	color: white;
+	z-index: 7;
+}
+.music_box_list .id_nav .Plist:hover{
+	background: rgb(181,56,47);
+}
+.music_box_list .id_nav .Slist:hover{
+	background: rgb(181,56,47);
+}
+.music_box_list .id_nav .Zlist:hover{
+	background: rgb(181,56,47);
+}
+.music_box_list .id_nav .Wlist:hover{
+	background: rgb(181,56,47);
+}
+
+.music_box_list .id_nav .minus{
+	left: 6%;
+	position: absolute;
+	width: 13%;
+	bottom: -42%;
+	z-index: 4;
+}
+
+/*底栏样式*/
+.music_box_list .bottomLine{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: rgb(232,72,61);
+	z-index: 4;
+}
+
+/*中间样式*/
+.music_box_list .musicbox{
+	position: absolute;
+	height: 90%;
+	width: 100%;
+	top: 75px;
+	bottom: 0;
+	overflow: scroll;
+}
+
+.music_box_list .musicbox div{
+	position: absolute;
+	left: 100%;	
+	width: 100%;
+	height: 90%;
+}
+
+.music_box_list .musicbox .Plistbox{
+	
+	background: white;
+	left: 0;
+	
+}
+.music_box_list .musicbox .Slistbox{
+	
+	background: white;
+	
+}
+.music_box_list .musicbox .Zlistbox{
+	
+	background: white;
+	
+	
+}
+.music_box_list .musicbox .Wlistbox{
+	
+	background: white;
+	
+}
+
+
+/*单曲的文本样式*/
+.music_box_list .musicbox .Plistbox p{
+	font-size: 15px;
+	position: absolute;
+	width: 100%;
+	height: 8%;
+	left: 5px;
+	color: black;
+	border-bottom: 1px solid #cccccc;
+}
+.music_box_list .musicbox .Plistbox p span{
+	font-size: 10px;
+	color: #999;
+}
+.music_box_list .musicbox .Plistbox #p11 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p21 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p31 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p41 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p51 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p61 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p71 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p81 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p91 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p101 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Plistbox #p21{
+	top: 0;
+}
+.music_box_list .musicbox .Plistbox #p21{
+	top: 10%;
+}
+.music_box_list .musicbox .Plistbox #p31{
+	top: 20%;
+}
+.music_box_list .musicbox .Plistbox #p41{
+	top: 30%;
+}
+.music_box_list .musicbox .Plistbox #p51{
+	top: 40%;
+}
+.music_box_list .musicbox .Plistbox #p61{
+	top: 50%;
+}
+.music_box_list .musicbox .Plistbox #p71{
+	top: 60%;
+}
+.music_box_list .musicbox .Plistbox #p81{
+	top: 70%;
+}
+.music_box_list .musicbox .Plistbox #p91{
+	top: 80%;
+}
+.music_box_list .musicbox .Plistbox #p101{
+	top: 90%;
+}
+
+
+/*歌手的文本样式*/
+
+
+.music_box_list .musicbox .Slistbox p{
+	font-size: 15px;
+	position: absolute;
+	width: 87%;
+	height: 8%;
+	right: 0;
+	color: black;
+	border-bottom: 1px solid #cccccc;
+}
+.music_box_list .musicbox .Slistbox p span{
+	font-size: 5px;
+	color: #999;
+}
+.music_box_list .musicbox .Slistbox img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	
+	border-radius: 3px;
+}
+/*歌手头像*/
+.music_box_list .musicbox .Slistbox .one{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:1%;
+}
+.music_box_list .musicbox .Slistbox .two{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:11%;
+}
+.music_box_list .musicbox .Slistbox .three{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:21%;
+}
+.music_box_list .musicbox .Slistbox .four{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:31%;
+}
+.music_box_list .musicbox .Slistbox .five{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:41%;
+}
+.music_box_list .musicbox .Slistbox .six{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:51%;
+}
+
+.music_box_list .musicbox .Slistbox .ten{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:61%;
+}
+/*符号*/
+.music_box_list .musicbox .Slistbox .p2 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p3 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p4 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p5 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p6 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p7 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p8 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p9 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p10 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Slistbox .p1{
+	top: 0;
+}
+.music_box_list .musicbox .Slistbox .p2{
+	top: 10%;
+}
+.music_box_list .musicbox .Slistbox .p3{
+	top: 20%;
+}
+.music_box_list .musicbox .Slistbox .p4{
+	top: 30%;
+}
+.music_box_list .musicbox .Slistbox .p5{
+	top: 40%;
+}
+.music_box_list .musicbox .Slistbox .p6{
+	top: 50%;
+}
+
+.music_box_list .musicbox .Slistbox .p10{
+	top: 60%;
+}
+
+
+/*专辑*/
+
+.music_box_list .musicbox .Zlistbox p{
+	font-size: 15px;
+	position: absolute;
+	width: 87%;
+	height: 8%;
+	right: 0;
+	color: black;
+	border-bottom: 1px solid #cccccc;
+}
+.music_box_list .musicbox .Zlistbox p span{
+	font-size: 5px;
+	color: #999;
+}
+.music_box_list .musicbox .Zlistbox img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	
+	border-radius: 3px;
+}
+/*歌手头像*/
+.music_box_list .musicbox .Zlistbox .one{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:1%;
+}
+.music_box_list .musicbox .Zlistbox .two{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:11%;
+}
+.music_box_list .musicbox .Zlistbox .three{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:21%;
+}
+.music_box_list .musicbox .Zlistbox .four{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:31%;
+}
+.music_box_list .musicbox .Zlistbox .five{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:41%;
+}
+.music_box_list .musicbox .Zlistbox .six{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:51%;
+}
+
+.music_box_list .musicbox .Zlistbox .ten{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:61%;
+}
+/*符号*/
+.music_box_list .musicbox .Zlistbox .p2 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p3 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p4 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p5 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p6 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p7 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p8 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p9 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p10 img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	top:12%;
+}
+.music_box_list .musicbox .Zlistbox .p2{
+	top: 0;
+}
+.music_box_list .musicbox .Zlistbox .p2{
+	top: 10%;
+}
+.music_box_list .musicbox .Zlistbox .p3{
+	top: 20%;
+}
+.music_box_list .musicbox .Zlistbox .p4{
+	top: 30%;
+}
+.music_box_list .musicbox .Zlistbox .p5{
+	top: 40%;
+}
+.music_box_list .musicbox .Zlistbox .p6{
+	top: 50%;
+}
+
+.music_box_list .musicbox .Zlistbox .p10{
+	top: 60%;
+}
+
+
+/*文件夹*/
+
+.music_box_list .musicbox .Wlistbox p{
+	font-size: 15px;
+	position: absolute;
+	width: 87%;
+	height: 8%;
+	right: 0;
+	color: black;
+	border-bottom: 1px solid #cccccc;
+}
+.music_box_list .musicbox .Wlistbox p span{
+	font-size: 5px;
+	color: #999;
+}
+.music_box_list .musicbox .Wlistbox img{
+	position: absolute;
+	width: 6%;
+	right: 5%;
+	
+	border-radius: 3px;
+}
+
+.music_box_list .musicbox .Wlistbox .p1{
+	top: 0;
+}
+.music_box_list .musicbox .Wlistbox .p2{
+	top: 10%;
+}
+.music_box_list .musicbox .Wlistbox .p3{
+	top: 20%;
+}
+.music_box_list .musicbox .Wlistbox .one{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:1%;
+}
+.music_box_list .musicbox .Wlistbox .two{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:11%;
+}
+.music_box_list .musicbox .Wlistbox .three{
+	position: absolute;
+	width: 9%;
+	left: 2%;
+	top:21%;
+}
+
+.playbg{
+	background: rgba(100,100,100,0.4);
+	
+}
+.playbg1{
+	background: white;
+	
+}
+

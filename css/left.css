@@ -1,0 +1,169 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*#left{*/
+    /*transform: translateX(-1000px);*/
+/*}*/
+#left{
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:-100%;
+    z-index: 1000;
+    background: white;
+    overflow: scroll;
+}
+
+#per{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background: url("../img/bg.jpg") no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#per #he1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 23px;
+    left: 23px;
+    border-radius: 100px;
+}
+
+#hezi{
+    position: absolute;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: lightyellow;
+    top: 150px;
+    left: 23px;
+}
+
+#level{
+    position: absolute;
+    top: 150px;
+    left: 141px;
+    width: 75px;
+    height: 26px;
+    color: lightyellow;
+    font-size: 20px;
+    font-family: 幼圆;
+    text-align: center;
+    font-weight: bolder;
+    border: 1px solid lightyellow;
+    border-radius: 20px;
+}
+
+#money{
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    right: 20px;
+    top: 188px;
+    /*border: 3px solid lightyellow;*/
+}
+
+#mon1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 6px;
+}
+
+#he2{
+    position: absolute;
+    top: 0px;
+    font-size: 20px;
+    color: lightyellow;
+    right: 0px;
+}
+
+#news{
+    width: 100%;
+    position: relative;
+    top: 250px;
+}
+
+#news_5{
+    border-bottom: 1px solid lightgray;
+}
+
+#news_7{
+    border-bottom: 1px solid lightgray;
+}
+
+#news div{
+    width: 100%;
+    height: 50px;
+    overflow: scroll;
+    padding-top: 20px;
+}
+
+#news div img{
+    position: absolute;
+    width: 35px;
+    left: 15px;
+}
+
+#news div span{
+    position: absolute;
+    font-size: 20px;
+    left: 75px;
+}
+
+#foot{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    background: #fff;
+    display: -webkit-flex;
+}
+
+#foot img{
+    position: absolute;
+    width: 30px;
+    bottom: 30px;
+
+}
+
+#foot #font1{
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    left: 40px;
+}
+
+
+#foot #font2{
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    left: 410px;
+}
+
+#foot #font3{
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    left: 183px;
+}
+
+#foot div:nth-child(1){
+    -webkit-flex: 4;
+}
+
+#foot div:nth-child(2){
+    -webkit-flex: 3;
+}
+
+#foot div:nth-child(3){
+    -webkit-flex: 3;
+}
